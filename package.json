@@ -1,18 +1,29 @@
 {
   "name": "vue-iframe-auto-height",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A simple Vue directive to auto-adjust iframe height",
-  "main": "src/v-auto-height.js",
-  "module": "src/v-auto-height.js",
+  "main": "src/v-auto-height.ts",
+  "module": "src/v-auto-height.ts",
   "exports": {
-    ".": "./src/v-auto-height.js",
-    "./child-script": "./src/child-script.js"
+    ".": "./src/v-auto-height.ts",
+    "./child-script": "./src/child-script.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yeochan-UL/vue-iframe-auto-height"
   },
-  "keywords": ["vue", "iframe", "auto-height", "resize"],
+  "keywords": [
+    "vue",
+    "iframe",
+    "auto-height",
+    "resize"
+  ],
+  "types": "src/vue-iframe-auto-height.d.ts",
   "author": "찬찬잉",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.5.13",
+    "@vue/runtime-core": "^3.5.13",
+    "vue": "^3.5.13"
+  }
 }

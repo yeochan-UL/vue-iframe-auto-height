@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "declaration": true,  // ✅ .d.ts 파일 자동 생성
+        "declarationMap": true,
+        "outDir": "dist",  // ✅ 컴파일된 .js, .d.ts 파일을 dist 폴더에 저장
+        "allowJs": false,  // ✅ 기존 .js 파일을 사용하지 않도록 설정
+        "emitDeclarationOnly": false  // ✅ .d.ts 파일과 .js 파일을 함께 생성
+    },
+    "include": ["src/**/*.ts", "src/initIframeAutoHeight.js"],
+    "exclude": ["node_modules"]
+}
