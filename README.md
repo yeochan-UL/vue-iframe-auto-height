@@ -28,20 +28,22 @@ npm install vue-iframe-auto-height
 <template>
   <div>
     <h1>Vue 3 Iframe Auto Height</h1>
-    <iframe v-iframe src="/child.html" frameborder="0" width="100%"></iframe>
+    <!-- v-auto-height 디렉티브를 사용하여 iframe 높이가 자동 조절됩니다. -->
+    <iframe v-auto-height src="/child.html" frameborder="0" width="100%"></iframe>
   </div>
 </template>
 
 <script>
 import { createApp } from "vue";
-// npm 패키지 설치 후 사용
-import VframePlugin from "vue-iframe-auto-height";
+// npm 패키지 설치 후 사용합니다.
+import { useIframeAutoHeight } from 'vue-iframe-auto-height/useIframeAutoHeight';
 
 const app = createApp({});
-// v-iframe 자동 등록
+// v-auto-height 커스텀 디렉티브를 전역에 등록합니다.
 app.use(VframePlugin);
 app.mount("#app");
 </script>
+
 ```
 
 ### **2️⃣ `iframe` 내부 페이지 (높이 자동 감지 및 전송)**
