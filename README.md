@@ -46,29 +46,6 @@ app.mount("#app");
 
 ```
 
-### **2️⃣ `iframe` 내부 페이지 (높이 자동 감지 및 전송)**
-
-`iframe` 내부에서 크기를 감지하고 부모 페이지로 전송해야 합니다.
-
-```html
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iframe Child</title>
-</head>
-<body>
-  <h2>Iframe 내부 페이지</h2>
-  <p>이 페이지의 높이는 자동으로 조절됩니다.</p>
-
-  <script type="module">
-    import "vue-iframe-auto-height/child-script"; // 높이 자동 조절 기능 실행
-  </script>
-</body>
-</html>
-```
-
 ## 📌 패키지 업데이트 및 배포
 
 ```bash
