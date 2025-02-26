@@ -1,16 +1,19 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "strict": true,
-        "declaration": true,  // ✅ .d.ts 파일 자동 생성
-        "declarationMap": true,
-        "outDir": "dist",  // ✅ 컴파일된 .js, .d.ts 파일을 dist 폴더에 저장
-        "allowJs": false,  // ✅ 기존 .js 파일을 사용하지 않도록 설정
-        "emitDeclarationOnly": false  // ✅ .d.ts 파일과 .js 파일을 함께 생성
+      "target": "ESNext",                      // 최신 ECMAScript 버전으로 컴파일
+      "module": "ESNext",                      // ESM 형식의 모듈 사용
+      "moduleResolution": "node",              // Node.js 방식으로 모듈 해석
+      "esModuleInterop": true,                 // ES 모듈과 CommonJS 간의 호환성을 위해 설정
+      "strict": true,                          // 모든 엄격한 타입 검사를 활성화 (타입 안정성 보장)
+      "declaration": true,                     // 타입 선언 파일(.d.ts) 생성
+      "declarationMap": true,                  // 타입 선언 파일에 대한 sourcemap 생성
+      "outDir": "dist",                        // 컴파일된 파일들이 출력될 디렉토리 (src가 아닌 dist를 사용 권장)
+      "allowJs": false,                        // JavaScript 파일은 허용하지 않음 (TypeScript 전용)
+      "emitDeclarationOnly": false,            // JS 파일과 d.ts 파일 모두 생성
+      "skipLibCheck": true,                    // 라이브러리 파일의 타입 검사를 건너뜁니다.
+      "forceConsistentCasingInFileNames": true // 파일 이름의 대소문자 일관성을 강제합니다.
     },
-    "include": ["src/**/*.ts", "src/initIframeAutoHeight.js"],
-    "exclude": ["node_modules"]
-}
+    "include": ["src/**/*"],                   // 컴파일 대상 파일 (src 폴더 내 모든 파일)
+    "exclude": ["node_modules", "dist"]        // 컴파일 제외 대상
+  }
+  
