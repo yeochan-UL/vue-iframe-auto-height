@@ -72,7 +72,7 @@ app.mount("#app");
 ## 📌 패키지 업데이트 및 배포
 
 ```bash
-npm version patch  # 1.1.0 → 1.1.1
+npm version patch  # 1.1.1 → 1.1.2
 npm publish
 ```
 
